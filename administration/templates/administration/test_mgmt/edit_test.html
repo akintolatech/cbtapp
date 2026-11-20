@@ -1,0 +1,116 @@
+{% extends "administration/admin_base.html" %}
+{% load static %}
+{% block title %} EditTest {% endblock %}
+{% block content %}
+
+{% block page_style %}
+<link type="text/css" href="{% static 'style/test.css' %}" rel="stylesheet" />
+<link type="text/css" href="{% static 'style/form.css' %}" rel="stylesheet" />
+<!-- <link type="text/css" href="{% static 'style/auth.css' %}" rel="stylesheet" /> -->
+{% endblock %}
+<!-- Main dashboard section-->
+<div id="home">
+   
+    <a href="{% url 'administration:test_mgmt' %}">
+
+        <div class="row">
+            <div class="back_container">
+                <div class="back_icn_container" style="margin-right: 12px;">
+                    <img src="{% static 'img/icns/back.svg' %}" />
+                </div>
+                <h2> TEST PORTAL FOR {{ test.title }}</h2>
+            </div>
+            <a href="{% url 'administration:upload_questions' test.id %}"><button class="action_btn">Upload</button></a>
+        </div>
+        
+    </a>
+    {% if messages %}
+  <ul>
+    {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    <div class="test_container">
+
+        <div class="bio_card">
+            <div class="bio-passport">
+                {% if test.image %}
+                    <img src="{{ test.image.url }}" />
+                {% else %}
+                    <img src="{% static 'img/user.jpg' %}" />
+                {% endif %}
+            </div>
+            <div class="student-details">
+                <p>
+                    <strong style="color:#088ccd;">{{ test.title }}  </strong> <br/>
+                    {{ test.description }}
+                </p>
+            </div>
+        </div>
+
+        <div class="test_box">
+
+            <div class="test_header">
+                <!-- <h2>{{ app_info.name }}</h2> -->
+                <h2>{{ test.title }} TEST QUESTIONS</h2>
+                <h4>{{ test.description }}</h4>
+            </div>
+
+            <div class="test_body">
+
+                <form>
+                    {% csrf_token %}
+
+                    {% for question in questions %}
+                        <fieldset class="question-box">
+                            {% if question.img %}
+                                <img src="{{ question.img.url }}" alt="Question Image" class="question-img">
+                            {% endif %}
+
+                            <legend class="question-text">
+                                <strong>{{ forloop.counter }}. {{ question.question_text }}</strong>
+                            </legend>
+
+                            <div class="options">
+                                <label>
+                                    <input type="radio" name="{{ question.id }}" value="{{ question.A }}"
+                                        {% if question.correct_option == question.A %}checked{% endif %} required>
+                                    {{ question.A }}
+                                </label><br>
+
+                                <label>
+                                    <input type="radio" name="{{ question.id }}" value="{{ question.B }}"
+                                        {% if question.correct_option == question.B %}checked{% endif %}>
+                                    {{ question.B }}
+                                </label><br>
+
+                                <label>
+                                    <input type="radio" name="{{ question.id }}" value="{{ question.C }}"
+                                        {% if question.correct_option == question.C %}checked{% endif %}>
+                                    {{ question.C }}
+                                </label><br>
+
+                                <label>
+                                    <input type="radio" name="{{ question.id }}" value="{{ question.D }}"
+                                        {% if question.correct_option == question.D %}checked{% endif %}>
+                                    {{ question.D }}
+                                </label><br>
+                            </div>
+                        </fieldset>
+                    {% endfor %}
+
+                
+                </form>
+
+            </div>
+            
+        </div>
+
+    </div>
+
+
+</div>
+
+
+{% endblock %}

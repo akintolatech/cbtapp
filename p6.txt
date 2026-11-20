@@ -1,0 +1,209 @@
+Which of the following is a software component rather than a hardware part of computer architecture?
+A. Input devices
+B. Output devices
+C. Memory
+D. Operating system
+ANSWER: D
+
+All of the following belong to core computer architecture hardware except which one?
+A. Input devices
+B. Output devices
+C. Operating system
+D. Memory
+ANSWER: C
+
+Which unit inside a CPU handles arithmetic operations and logical comparisons?
+A. Control Unit
+B. Graphics Processing Unit
+C. Arithmetic Logic Unit
+D. Tensor Processing Unit
+ANSWER: C
+
+If a processor is comparing two values or adding numbers, which component is carrying out that work?
+A. CU
+B. GPU
+C. ALU
+D. TPU
+ANSWER: C
+
+Which category of hardware presents processed information to a user?
+A. Input devices
+B. Storage devices
+C. Output devices
+D. Network devices
+ANSWER: C
+
+A monitor displays results to a user, making it an example of which device type?
+A. Input device
+B. Output device
+C. Storage device
+D. Network device
+ANSWER: B
+
+Which component directs and coordinates the operations of other computer parts?
+A. Arithmetic Logic Unit
+B. Central Processing Unit
+C. Graphics Processing Unit
+D. Control Unit
+ANSWER: D
+
+Which unit acts as the traffic director coordinating instructions and activities across computer components?
+A. ALU
+B. CPU
+C. GPU
+D. CU
+ANSWER: D
+
+Which of the following is used to feed data or audio into a computer system?
+A. Monitor
+B. Printer
+C. Microphone
+D. Speaker
+ANSWER: C
+
+Unlike a monitor, printer, or speaker, which device sends input into a computer?
+A. Monitor
+B. Printer
+C. Microphone
+D. Speaker
+ANSWER: C
+
+What term describes a worldwide network interconnecting computers across the globe?
+A. Extranet
+B. Intranet
+C. Internet
+D. Skynet
+ANSWER: C
+
+A private internal network is to an organization as a global network of computers is to what?
+A. Extranet
+B. Intranet
+C. Internet
+D. Skynet
+ANSWER: C
+
+Which network type covers a large geographic area or campus-scale connection?
+A. LAN
+B. WAN
+C. MAN
+D. WLAN
+ANSWER: B
+
+When computers are connected across a wide geographic region, which network classification applies?
+A. LAN
+B. WAN
+C. Bus
+D. Star
+ANSWER: B
+
+Which of these is not a recognized network topology?
+A. Star
+B. Bus
+C. Ring
+D. Train
+ANSWER: D
+
+Star, bus, and ring describe network layouts, whereas which option is not a network topology?
+A. Star
+B. Bus
+C. Ring
+D. Train
+ANSWER: D
+
+Which of the following is a telecommunications carrier rather than a web browser?
+A. Firefox
+B. Edge
+C. Airtel
+D. Internet Explorer
+ANSWER: C
+
+Which option is not a program used to browse websites?
+A. Firefox
+B. Edge
+C. Airtel
+D. Explorer
+ANSWER: C
+
+What is the correct expansion of the acronym URL?
+A. Unified Resources Location
+B. Uniform Resources Locator
+C. Unified Resource Location
+D. Uniform Resource Locator
+ANSWER: D
+
+A web address format such as a URL stands for which of the following?
+A. Uniform Resource Locator
+B. Unified Resources Location
+C. Uniform Resources Locator
+D. Unified Resource Location
+ANSWER: A
+
+Which of these is a word processor rather than a web search engine?
+A. Google
+B. Bing
+C. Yahoo
+D. Microsoft Word
+ANSWER: D
+
+Google, Bing, and Yahoo are search engines, whereas which option is not?
+A. Google
+B. Bing
+C. Yahoo
+D. Microsoft Word
+ANSWER: D
+
+What does the acronym HTTP stand for in web communications?
+A. Hypertext Transferal Protocol
+B. Hyperlink Transfer Protocol
+C. Hypertext Transfer Protocol
+D. Hypelink Transfer Protocol
+ANSWER: C
+
+Which expansion correctly defines HTTP?
+A. Hypertext Transfer Protocol
+B. Hyperlink Transfer Protocol
+C. Hypertext Transferal Protocol
+D. Hypelink Transfer Protocol
+ANSWER: A
+
+Which of the following is an advantage offered by cloud computing?
+A. Virus spread
+B. Collaboration
+C. Power failure
+D. Device damage
+ANSWER: B
+
+Team members working together on shared online files illustrates which cloud computing benefit?
+A. Virus spread
+B. Collaboration
+C. Power failure
+D. Device damage
+ANSWER: B
+
+Cloud computing enables users to reach their files from where?
+A. Any location
+B. One place only
+C. A single classroom
+D. Only local apps
+ANSWER: A
+
+Being able to open your stored files away from a single desk highlights which feature of cloud computing?
+A. Any location access
+B. One place only
+C. Classroom restriction
+D. Offline-only apps
+ANSWER: A
+
+Which program is most suitable for drafting letters and text documents on a computer?
+A. Microsoft Access
+B. Microsoft Excel
+C. Microsoft Word
+D. Microsoft PowerPoint
+ANSWER: C
+
+Which application is designed primarily for organizing numerical data and running automated formulas, or storing structured database tables?
+A. Word for automated formulas
+B. Excel for numerical records and calculations
+C. PowerPoint for database tables
+D. Word for database records
+ANSWER: B

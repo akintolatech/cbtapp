@@ -1,0 +1,40 @@
+{% extends "administration/admin_base.html" %}
+{% load static %}
+{% block title %} Upload Questions {% endblock %}
+{% block content %}
+
+{% block page_style %}
+<link type="text/css" href="{% static 'style/form.css' %}" rel="stylesheet" />
+{% endblock %}
+<!-- Main dashboard section-->
+<div id="home" class="tabcontent">
+
+    <a href="{% url 'administration:test_mgmt' %}">
+        <div class="back_icn_container">
+            <img src="{% static 'img/icns/back.svg' %}" />
+        </div>
+    </a>
+    {% if messages %}
+  <ul>
+    {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    <div class="form_container">
+        <h3>Upload Questions for {{ test.title }} </h3>
+            
+        <form method="post"  enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <center>
+                <button type="submit">Upload Questions</button>
+            </center>
+        </form>
+    
+    </div>
+
+</div>
+
+
+{% endblock %}

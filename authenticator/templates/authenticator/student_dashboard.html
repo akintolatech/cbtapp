@@ -1,0 +1,294 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ request.user.username }}'s Dashboard</title>
+    <link type="text/css" href="{% static 'style/student-dashboard.css' %}" rel="stylesheet" />
+    <link type="text/css" href="{% static 'style/auth.css' %}" rel="stylesheet" />
+    <link type="text/css" href="{% static 'style/generator.css' %}" rel="stylesheet"/>
+    <!-- <link type="text/css" href="{% static 'style/dashboard.css' %}" rel="stylesheet"/> -->
+    <!-- <link type="text/css" href="{% static 'style/styles.css' %}" rel="stylesheet"/> -->
+    <link type="x-icon" href="{% static 'img/AFIT.png' %}" rel="icon" />
+    <script src="{% static 'js/jquery.js' %}"></script>
+
+</head>
+<body>
+
+    <div class="main-container">
+
+        <div class="sidebar-item">
+
+            <div class="ham-nav">
+                <img class="ham-icon" src="{% static 'img/icns/grid.svg' %}" />
+            </div>
+
+            <div class="app-id">
+
+                <div class="logo-box">
+                    <img src="{{ app_info.logo.url }}" />
+                </div>
+
+                <!-- <div class="app-details">
+                    <h3>{{ app_info.name }}<br/>{{ app_info.phrase }}</h3>
+                </div> -->
+
+            </div>
+
+            <div class="dashboard-tab-container">
+
+                <div class="dashboard-tab" onclick="tabToggle('home', this)" id="defaultOpen">
+                    <div class="icn-box">
+                        <img src="{% static 'img/icns/home.svg' %}"  />
+                    </div>
+                    <h3>Dashboard</h3>
+                </div>
+
+                {% comment %}
+                <!-- <div class="dashboard-tab" onclick="tabToggle('accounts', this)" >
+                    <div class="icn-box">
+                        <img src="{% static 'img/icns/account.svg' %}"  />
+                    </div>
+                    <h3>Accounts</h3>
+                </div> -->
+                {% endcomment %}
+
+                <div class="dashboard-tab" onclick="tabToggle('about', this)">
+                    <div class="icn-box">
+                        <img src="{% static 'img/icns/cards_star.svg' %}" />
+                    </div>
+                    <h3>Results</h3>
+                </div>
+
+                <div class="dashboard-tab" onclick="tabToggle('projects', this)">
+                    <div class="icn-box">
+                        <img src="{% static 'img/warn.svg' %}" />
+                    </div>
+                    <h3>Info</h3>
+                </div>
+
+                <a href="{% url 'authenticator:logout' %}">
+                    <div class="dashboard-tab">
+                        <div class="icn-box">
+                            <img src="{% static 'img/logout.svg' %}" />
+                        </div>
+                        <h3>Log Out</h3>
+                    </div>
+                </a>
+
+
+            </div>
+
+        </div>
+
+        <div class="main-item">
+
+            <div class="main-item-wrap">
+
+                <!-- Main dashboard section-->
+                <div id="home" class="tabcontent">
+
+                    <div class="status-container">
+
+                        <div class="status-tab">        
+                            <!-- <h3>Student Bio</h3> -->
+                            <div class="student-bio">
+                                <div class="student-passport">
+                                    {% if request.user.profile.photo %}
+                                        <img src="{{ request.user.profile.photo.url }}" />
+                                    {% else %}
+                                        <img src="{% static 'img/user.jpg' %}" />
+                                    {% endif %}
+                                </div>
+                                <div class="student-details">
+                                    <p>
+                                        Name: <strong style="color:#088ccd;">{{ request.user.username }} </strong> <br/>
+                                        Arm: {{ request.user.profile.class_arm }}
+                                    </p>
+
+                              
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="logs-container" >
+
+                        <div class="logs-container-header">
+                            <h3>Available Tests</h3>
+
+                          
+                            <div class="icn-box small">
+                                <img src="{% static 'img/icns/test.svg' %}" />
+                            </div>
+                    
+                        </div>
+
+                                        
+                        <div class="test-container">
+
+                            {% for test in tests %}
+                
+                            <div class="test-card">
+
+                                <center>
+
+                                    <img src="{{ test.image.url }}" />
+                                    <h3>{{ test.title }}</h3>
+                                    <a href="{% url 'tester:test_questions' test.id %}"><button class="sec-btn" >Write</button></a>
+
+                                </center>
+
+                            </div>
+                            {% empty %}
+                                <h3 style="color: red;">No Available Tests </h3>
+                            {% endfor %}
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Accounts section -->
+                {% comment %}
+                <div id="accounts" class="tabcontent">
+                    <!-- Comprehensive logs -->
+                    <div class="logs-container">
+
+                        <div>
+                            <h3>Accounts</h3>
+                        </div>
+
+                        <form method="POST" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <div class="gen-container">
+                                <div class="gen-item">
+                                    <div class="passport-frame">
+                                        {% if profile_form.instance.photo %}
+                                            <img id="image_preview_id" src="{{ profile_form.instance.photo.url }}" alt="User Photo" class="passport-photo">
+                                        {% else %}
+                                            <img id="image_preview_id" src="{% static 'img/user.jpg' %}" alt="Default Photo" class="passport-photo" style="display: none;">
+                                        {% endif %}
+                                    </div>
+                                </div>
+
+                                <div class="gen-item">
+                                    <div>
+                                        <h1>Edit your account</h1>
+                                        <p>You can edit your account using the following form:</p>
+
+                                        {{ user_form.as_p }}
+                                        {{ profile_form.as_p }}
+
+                                        <p><input type="submit" value="Save changes"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+                {% endcomment %}
+
+                <!-- Results Section -->
+                <div id="about" class="tabcontent">
+                    <div class="logs-container" >
+
+                        <div class="logs-container-header">
+                            <h3>My results</h3>
+
+                            <a href="#">
+                                <div class="icn-box small">
+                                    <img src="{% static 'img/x.svg' %}" />
+                                </div>
+                            </a>
+                        </div>
+
+
+                        <div class="test-container">
+
+                            {% for result in results %}
+
+                            <div class="test-card">
+
+                                <center>
+
+                                    <img src="{{ result.test_key.image.url }}" />
+                                    <h3>{{ result.test }}</h3>
+                                    <h6 style="margin: 0;">{{ result.date }}</h6>
+                                    <h2 style="margin: 0;">{{ result.score }}</h2>
+
+                                </center>
+
+                            </div>
+                            {% empty %}
+                                <h3 style="color: red;">No Available Results </h3>
+                            {% endfor %}
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Errata section -->
+                <div id="projects" class="tabcontent">
+                    <!-- Comprehensive logs -->
+                    <div class="logs-container">
+                        <div>
+                            <h3>Info</h3>
+                        </div>
+                        <p>This is a Computer Based Software developed by Akintola Technologies</p>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+
+    </div>
+    
+</body>
+
+    <script>
+
+
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click(); 
+
+        function tabToggle ( section, element) {
+
+            
+            var tabcontent;
+            var iconBox;
+
+
+            // remove sections except default
+            tabcontent = document.querySelectorAll(".tabcontent");
+
+            for (var i=0; i < tabcontent.length; i++){
+                tabcontent[i].style.display = "none";
+                // element.style.backgroundColor= "";
+            }
+
+
+            dashboardTab = document.querySelectorAll(".dashboard-tab");
+            for ( var i = 0; i < dashboardTab.length; i++) {
+                dashboardTab[i].style.backgroundColor = "";
+            }
+
+            // show specific content
+            document.getElementById(section).style.display = "block";
+            element.style.backgroundColor="#fff7ff1f"
+
+        };
+
+    </script>
+
+    <script language="javascript" src="{% static 'js/toggle.js' %}"></script>
+
+</html>

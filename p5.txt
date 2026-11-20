@@ -1,0 +1,209 @@
+Because Android runs primarily on smartphones and tablets, under which operating system category does it fall?
+A. Desktop OS
+B. Mobile OS
+C. Server OS
+D. AI OS
+ANSWER: B
+
+If someone asks whether Android belongs to desktop, server, or mobile operating systems, which classification is accurate?
+A. Desktop OS
+B. Mobile OS
+C. Server OS
+D. AI OS
+ANSWER: B
+
+Which of these operating systems is designed for mobile devices rather than traditional desktop computers?
+A. Linux
+B. iOS
+C. Windows
+D. Chrome OS
+ANSWER: B
+
+Linux, Windows, and Chrome OS can run on desktops, whereas which option is a mobile operating system rather than a desktop OS?
+A. Linux
+B. iOS
+C. Windows
+D. Chrome OS
+ANSWER: B
+
+Which user interface relies on visual menus and icons so users can interact with a computer visually?
+A. CLI
+B. BUI
+C. VUI
+D. GUI
+ANSWER: D
+
+Clicking icons and selecting items from menus to navigate a computer is a hallmark of which interface type?
+A. CLI
+B. BUI
+C. VUI
+D. GUI
+ANSWER: D
+
+What digital container is used to organize and store audio and video files together?
+A. File
+B. Desktop
+C. Folder
+D. Extension
+ANSWER: C
+
+To group your music and video files neatly on a drive, which storage structure should you create?
+A. File
+B. Desktop
+C. Folder
+D. Extension
+ANSWER: C
+
+What does the .jpg image file extension stand for?
+A. Joint Photo Group
+B. Joint Photographic Expert Group
+C. Joint Picture Expert Group
+D. Joint Photo Expert Group
+ANSWER: B
+
+Which full name corresponds to the common .jpg file extension?
+A. Joint Photo Group
+B. Joint Photographic Expert Group
+C. Joint Picture Expert Group
+D. Joint Photo Expert Group
+ANSWER: B
+
+After copying or cutting content to the clipboard, which keyboard shortcut pastes it into place?
+A. Ctrl + C
+B. Ctrl + X
+C. Ctrl + Z
+D. Ctrl + V
+ANSWER: D
+
+Pressing Ctrl + V on your keyboard performs which action on previously copied or cut data?
+A. Copying
+B. Deleting
+C. Renaming
+D. Pasting
+ANSWER: D
+
+Which software category best fits Microsoft Word?
+A. Business software
+B. Spreadsheet application
+C. Database application
+D. Word processor
+ANSWER: D
+
+If you are explaining Microsoft Word's primary role rather than calling it a spreadsheet or database tool, how is it best described?
+A. Business software
+B. Spreadsheet application
+C. Database application
+D. Word processor
+ANSWER: D
+
+Where in the Microsoft Word window is the zoom slider or zoom level control typically located?
+A. Title bar
+B. Scroll bar
+C. Status bar
+D. Tool bar
+ANSWER: C
+
+If you want to quickly zoom in or out on a document page at the bottom edge of Microsoft Word, which bar houses that control?
+A. Title bar
+B. Scroll bar
+C. Status bar
+D. Tool bar
+ANSWER: C
+
+Which application is built for automating calculations, generating charts, and modeling numerical data?
+A. Access database
+B. Word
+C. PowerPoint
+D. Excel
+ANSWER: D
+
+When a task requires formula-driven calculations, visual charts, and data modeling, which program is the right choice?
+A. Access database
+B. Word
+C. PowerPoint
+D. Excel
+ANSWER: D
+
+In Microsoft Excel, what do you type at the start of a cell to begin a formula or calculation?
+A. Equal sign (=)
+B. Hashtag (#)
+C. Ampersand (&)
+D. Question mark (?)
+ANSWER: A
+
+Which Excel feature lets you visually summarize numerical data using bar, line, or pie visuals?
+A. Charts
+B. Footnotes
+C. Slide master
+D. Mail merge
+ANSWER: A
+
+In Microsoft Excel, what is the intersection of a single row and a single column called?
+A. Worksheet
+B. Cell
+C. Workbook
+D. Formula bar
+ANSWER: B
+
+In Microsoft Word, which feature automatically moves text to the next line when you reach the right margin?
+A. Word wrap
+B. Cell merge
+C. Slide transition
+D. Freeze panes
+ANSWER: A
+
+Which Microsoft Word feature helps you create personalized letters or labels for many recipients using a data list?
+A. Conditional formatting
+B. Mail merge
+C. PivotTable
+D. Slide sorter
+ANSWER: B
+
+In Microsoft Word, which shortcut is commonly used to save the active document?
+A. Ctrl + S
+B. Ctrl + P
+C. Ctrl + F
+D. Ctrl + N
+ANSWER: A
+
+Which Microsoft application is specifically designed for creating slide-based presentations?
+A. Word
+B. Excel
+C. PowerPoint
+D. Access
+ANSWER: C
+
+In Microsoft PowerPoint, what is an individual screen or page of a presentation called?
+A. Cell
+B. Slide
+C. Record
+D. Sheet
+ANSWER: B
+
+In Microsoft PowerPoint, what do you call the visual effect that occurs as you move from one slide to the next during a slideshow?
+A. Slide transition
+B. Data validation
+C. Text wrapping
+D. Page break
+ANSWER: A
+
+Which Microsoft PowerPoint view or mode runs your presentation full-screen for an audience?
+A. Slide Show
+B. Formula View
+C. Design View
+D. Print Layout
+ANSWER: A
+
+Between Word, Excel, and PowerPoint, which tool is best for building a multi-slide pitch deck with speaker visuals?
+A. Microsoft Word
+B. Microsoft Excel
+C. Microsoft PowerPoint
+D. None of these
+ANSWER: C
+
+Between Word, Excel, and PowerPoint, which application is best suited for budgeting tables and automated totals?
+A. Microsoft Word
+B. Microsoft Excel
+C. Microsoft PowerPoint
+D. None of these
+ANSWER: B
