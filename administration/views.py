@@ -12,10 +12,27 @@ from django.shortcuts import render
 from .forms import CreateTestForm, EditQuestionForm, QuestionUploadForm
 import re
 import json
-
+from django.contrib.auth import get_user_model
+from django.shortcuts import render
+from django.utils import timezone
 
 from docx import Document
 
+
+# def print_cbt_cards(request):
+#     today = timezone.localdate()
+#     students = User.objects.filter(date_joined__date=today)
+#
+#     context = {
+#         'students': students,
+#         'exam_url': 'akintolatech.pythonanywhere.com',
+#     }
+#
+#     return render(
+#         request,
+#         'administration/users/access_cards.html',
+#         context,
+#     )
 
 
 def print_cbt_cards(request):

@@ -41,6 +41,9 @@
                             you scored <br/>
                             <h1 class="score" style="color: green;"> {{ itm.score }}</h1>
                         </p>
+                        {% empty %}
+                        <h1>You have no result for this test</h1>
+                        <p>Contact Admin</p>
                         {% endfor %}
 
                     </center>
